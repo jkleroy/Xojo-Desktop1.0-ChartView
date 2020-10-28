@@ -10,7 +10,7 @@ Begin Window MainWindow
    HasBackColor    =   True
    Height          =   642
    ImplicitInstance=   True
-   LiveResize      =   True
+   LiveResize      =   "True"
    MacProcID       =   0
    MaxHeight       =   32000
    MaximizeButton  =   True

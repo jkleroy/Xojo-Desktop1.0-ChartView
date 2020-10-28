@@ -499,7 +499,7 @@ Inherits Canvas
 		    #if TargetWin32
 		      if not LiveRefresh and System.MouseDown then
 		        g.DrawPicture(Buffer, 0, 0)
-		         Return
+		        Return
 		      end if
 		    #endif
 		    FullRefresh = True
@@ -3452,7 +3452,7 @@ Inherits Canvas
 		  
 		  If Trim(Data)="" then
 		    LastError = "Empty CSV Data"
-		     Return
+		    Return
 		  End If
 		  
 		  If Data.InStr(Separator)=0 and not OnlyData then
@@ -6396,13 +6396,13 @@ Inherits Canvas
 		      maximum = maxValueSecondary
 		      mUnitHeight = UnitHeightsecondary
 		      If Axes(2).LogarithmicScale = False and Axes(2).MinimumScale <> 0 then
-		        ShiftValue = Axes(2).MinimumScale
+		        'ShiftValue = Axes(2).MinimumScale
 		      End If
 		    else
 		      maximum = maxValue
 		      mUnitHeight = UnitHeight
 		      If Axes(1).LogarithmicScale = False and Axes(1).MinimumScale <> 0 then
-		        ShiftValue = Axes(1).MinimumScale
+		        'ShiftValue = Axes(1).MinimumScale
 		      End If
 		    End If
 		    
@@ -6456,7 +6456,7 @@ Inherits Canvas
 		          End If
 		          
 		          'If ShiftValue then
-		          Y = H - Round((Value-ShiftValue)*mUnitHeight)
+		          Y = H - Round((Value)*mUnitHeight) //Round((Value-ShiftValue)*mUnitHeight)
 		          'else
 		          'Y = H - Round(Value*mUnitHeight)
 		          'End If
@@ -8424,7 +8424,7 @@ Inherits Canvas
 		      End If
 		      
 		      If Axes(1).MajorGridLine is Nil then
-		         'Axes(1).MajorGridLine = New ChartLine
+		        'Axes(1).MajorGridLine = New ChartLine
 		      End If
 		      'If Axes(1).MajorGridLine.Filltype = ChartLine.FillAutomatic then
 		      'Axes(1).MajorGridLine.Width = 1
@@ -10221,7 +10221,6 @@ Inherits Canvas
 			If True, the ChartView will not refresh its contents.
 			
 			Set this property to True before calling LoadFromCSV or LoadFromRecordset if you need to do some setup before displaying the Chart.
-			
 		#tag EndNote
 		Freeze As Boolean
 	#tag EndProperty
@@ -10275,7 +10274,6 @@ Inherits Canvas
 	#tag Property, Flags = &h0
 		#tag Note
 			The Legend styling
-			
 		#tag EndNote
 		Legend As ChartLabel
 	#tag EndProperty
@@ -10296,7 +10294,6 @@ Inherits Canvas
 			If True, the ChartView will refresh when its containing window is being resized.
 			
 			The Default is false in order to improve performance.
-			
 		#tag EndNote
 		LiveRefresh As Boolean
 	#tag EndProperty
@@ -10310,7 +10307,6 @@ Inherits Canvas
 			#newinversion 1.1
 			The Margin in pixels for top, left, bottom and right.
 			The Default Value is 20
-			
 		#tag EndNote
 		Margin As Integer = 20
 	#tag EndProperty

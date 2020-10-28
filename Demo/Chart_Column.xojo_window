@@ -44,7 +44,7 @@ Begin ContainerControl Chart_Column
       DoughnutRadius  =   0.0
       Enabled         =   True
       EnableSelection =   False
-      EraseBackground =   True
+      EraseBackground =   "True"
       FollowAllSeries =   False
       FollowMouse     =   False
       FollowValues    =   False

@@ -44,7 +44,7 @@ Begin ContainerControl Chart_LiveData
       DoughnutRadius  =   0.0
       Enabled         =   True
       EnableSelection =   False
-      EraseBackground =   True
+      EraseBackground =   "True"
       FollowAllSeries =   False
       FollowMouse     =   False
       FollowValues    =   False
@@ -97,7 +97,7 @@ Begin ContainerControl Chart_LiveData
       DoughnutRadius  =   0.0
       Enabled         =   True
       EnableSelection =   False
-      EraseBackground =   True
+      EraseBackground =   "True"
       FollowAllSeries =   False
       FollowMouse     =   False
       FollowValues    =   False
@@ -132,13 +132,14 @@ Begin ContainerControl Chart_LiveData
       Width           =   735
    End
    Begin Timer Timer1
+      Enabled         =   True
       Index           =   -2147483648
       InitialParent   =   ""
       LockedInPosition=   False
       Mode            =   0
       Period          =   200
       Scope           =   0
-      TabPanelIndex   =   "0"
+      TabPanelIndex   =   0
    End
    Begin Label Label1
       AutoDeactivate  =   True

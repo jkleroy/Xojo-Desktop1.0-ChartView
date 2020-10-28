@@ -44,7 +44,7 @@ Begin ContainerControl Chart_Pie
       DoughnutRadius  =   0.0
       Enabled         =   True
       EnableSelection =   False
-      EraseBackground =   False
+      EraseBackground =   "False"
       FollowAllSeries =   False
       FollowMouse     =   False
       FollowValues    =   False
@@ -234,7 +234,7 @@ Begin ContainerControl Chart_Pie
       DoughnutRadius  =   0.0
       Enabled         =   True
       EnableSelection =   False
-      EraseBackground =   False
+      EraseBackground =   "False"
       FollowAllSeries =   False
       FollowMouse     =   False
       FollowValues    =   False

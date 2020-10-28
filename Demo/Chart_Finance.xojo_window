@@ -44,7 +44,7 @@ Begin ContainerControl Chart_Finance
       DoughnutRadius  =   0.0
       Enabled         =   True
       EnableSelection =   False
-      EraseBackground =   True
+      EraseBackground =   "True"
       FollowAllSeries =   False
       FollowMouse     =   False
       FollowValues    =   False
@@ -88,7 +88,7 @@ Begin ContainerControl Chart_Finance
       ChartPic        =   0
       DoubleBuffer    =   False
       Enabled         =   True
-      EraseBackground =   True
+      EraseBackground =   "True"
       Height          =   75
       HelpTag         =   ""
       Index           =   -2147483648
@@ -155,7 +155,7 @@ Begin ContainerControl Chart_Finance
       ChartPic        =   0
       DoubleBuffer    =   False
       Enabled         =   True
-      EraseBackground =   True
+      EraseBackground =   "True"
       Height          =   75
       HelpTag         =   ""
       Index           =   -2147483648
@@ -327,7 +327,7 @@ Begin ContainerControl Chart_Finance
       ChartPic        =   0
       DoubleBuffer    =   False
       Enabled         =   True
-      EraseBackground =   True
+      EraseBackground =   "True"
       Height          =   75
       HelpTag         =   ""
       Index           =   -2147483648
